@@ -1,5 +1,5 @@
 baseURL: "https://pinsungku.github.io/"
-title: ExampleSite
+title: Pin-Sung Ku
 paginate: 5
 theme: PaperMod
 
@@ -16,15 +16,15 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Pin-Sung Ku
+  description: "Pin-Sung Ku's Personal Website"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  author: Pin-Sung Ku
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  defaultTheme: dark #auto , light
+  disableThemeToggle: true
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -39,6 +39,7 @@ params:
   comments: false
   hidemeta: false
   hideSummary: false
+  hideFooter: false
   showtoc: false
   tocopen: false
 
@@ -52,19 +53,19 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Pin-Sung Ku"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    enabled: true # needs to be explicitly set
+    title: About 
+    subtitle: I'm a Ph.D. student advised by **[Dr. Cindy Hsin-Liu Kao](https://www.hybridbody.human.cornell.edu/cindyhlkao)** in Information Science at Cornell University. <space><space> My research in **[Hybrid Body Lab](https://www.hybridbody.human.cornell.edu/)** focused on ubiquitous computing, and wearable on-skin technologies. My objective is to augment human body by enabling customizable sensing/actuator functions to modular wearable systems. 
+    imageUrl: images/profile.jpg
+    imageWidth: 250
+    imageHeight: 250
+    imageTitle: profile
     buttons:
       - name: Posts
         url: posts
@@ -75,14 +76,15 @@ params:
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
+    
 
   socialIcons:
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=7p442SEAAAAJ"
     - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
-    - name: github
-      url: "https://github.com/"
+      url: "https://twitter.com/PinSungKu"
+    - name: cv
+      url: cv.pdf
 
   analytics:
     google:
@@ -116,11 +118,11 @@ params:
 menu:
   main:
     - identifier: categories
-      name: categories
+      name: Research
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: Publications
       url: /tags/
       weight: 20
     - identifier: example
