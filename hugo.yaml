@@ -7,32 +7,38 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
-googleAnalytics: UA-123-45
+mainsections: ["research"]
+# googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
-  minifyOutput: true
+  # minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Pin-Sung Ku
   description: "Pin-Sung Ku's Personal Website"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Pin-Sung Ku
+  keywords: [Portfolio]
+  # author: Pin-Sung Ku
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark #auto , light
   disableThemeToggle: true
 
-  ShowReadingTime: true
-  ShowShareButtons: true
+  ShowReadingTime: false
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -44,7 +50,7 @@ params:
   tocopen: false
 
   assets:
-    # disableHLJS: true # to disable highlight.js
+    disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "<link / abs url>"
     favicon16x16: "<link / abs url>"
@@ -61,16 +67,16 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: About 
-    subtitle: I'm a Ph.D. student advised by **[Dr. Cindy Hsin-Liu Kao](https://www.hybridbody.human.cornell.edu/cindyhlkao)** in Information Science at Cornell University. <space><space> My research in **[Hybrid Body Lab](https://www.hybridbody.human.cornell.edu/)** focused on ubiquitous computing, and wearable on-skin technologies. My objective is to augment human body by enabling customizable sensing/actuator functions to modular wearable systems. 
+    subtitle: I'm a Ph.D. student advised by **[Dr. Cindy Hsin-Liu Kao](https://www.hybridbody.human.cornell.edu/cindyhlkao)** in Information Science at Cornell University. My research in **[Hybrid Body Lab](https://www.hybridbody.human.cornell.edu/)** focused on ubiquitous computing, and wearable on-skin technologies. My objective is to augment human body by means of modular and customizable wearable systems. 
     imageUrl: images/profile.jpg
     imageWidth: 250
     imageHeight: 250
     imageTitle: profile
     buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+      - name: Research
+        url: research
+      - name: Publications
+        url: publications
 
   # home-info mode
   homeInfoParams:
@@ -94,48 +100,49 @@ params:
     yandex:
       SiteVerificationTag: "XYZabc"
 
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+  # cover:
+  #   hidden: true # hide everywhere but not in structured data
+  #   hiddenInList: true # hide on list pages and home
+  #   hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
+  # fuseOpts:
+  #   isCaseSensitive: false
+  #   shouldSort: true
+  #   location: 0
+  #   distance: 1000
+  #   threshold: 0.4
+  #   minMatchCharLength: 0
+  #   limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+  #   keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
+    - identifier: research
       name: Research
-      url: /categories/
+      url: /research/
       weight: 10
-    - identifier: tags
+    - identifier: publications
       name: Publications
-      url: /tags/
+      url: /publications/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
+    - identifier: search
+      name: Search
+      url: /search/
       weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
-    noClasses: false
     # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    # noClasses: false
+    style: monokai
