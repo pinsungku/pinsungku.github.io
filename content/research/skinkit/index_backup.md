@@ -1,5 +1,5 @@
 ---
-title: "SkinLink"
+title: "SkinKit"
 summary: On-body Construction and Prototyping of Reconfigurable Epidermal Interfaces
 # date: 2021-01-20
 weight: 2
