@@ -4,7 +4,7 @@ summary: On-body Construction and Prototyping of Reconfigurable Epidermal Interf
 # date: 2021-01-20
 weight: 2
 aliases: ["/skinlink"]
-tags: ["PaperMod", "Docs"]
+tags: ["Research", "IMWUT", "Prototyping Toolkit"]
 author: ["Pin-Sung Ku", "Kunpeng Huang", "Nancy Wang", "Boaz Ng", "Alicia Chu", "Cindy Hsin-Liu Kao"]
 cover:
   image: images/skinlink_teaser.png

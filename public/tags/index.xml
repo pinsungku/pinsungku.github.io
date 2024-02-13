@@ -20,17 +20,17 @@
       <description></description>
     </item>
     <item>
-      <title>Docs</title>
-      <link>https://pinsungku.github.io/tags/docs/</link>
+      <title>IMWUT</title>
+      <link>https://pinsungku.github.io/tags/imwut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://pinsungku.github.io/tags/docs/</guid>
+      <guid>https://pinsungku.github.io/tags/imwut/</guid>
       <description></description>
     </item>
     <item>
-      <title>PaperMod</title>
-      <link>https://pinsungku.github.io/tags/papermod/</link>
+      <title>Prototyping Toolkit</title>
+      <link>https://pinsungku.github.io/tags/prototyping-toolkit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://pinsungku.github.io/tags/papermod/</guid>
+      <guid>https://pinsungku.github.io/tags/prototyping-toolkit/</guid>
       <description></description>
     </item>
     <item>
@@ -38,6 +38,13 @@
       <link>https://pinsungku.github.io/tags/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://pinsungku.github.io/tags/publications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>https://pinsungku.github.io/tags/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pinsungku.github.io/tags/research/</guid>
       <description></description>
     </item>
   </channel>
