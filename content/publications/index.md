@@ -1,12 +1,13 @@
 ---
 title: "Publications"
-summary: Learn About All Features in PaperMod
+summary: 
 # date: 2021-01-20
 weight: 2
 aliases: ["/publications"]
-tags: ["Publications", "CV"]
+tags: ["Publications"]
 # author: ["Pin-Sung Ku"]
 url: "/publications"
+showFigure: false
 ---
 
 {{< columns >}}
